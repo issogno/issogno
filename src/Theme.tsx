@@ -36,6 +36,8 @@ export const theme: ThemeType = {
     },
     "colors": {
       issognoHeader: IssognoPalette.pureBlack,
+      issognoCard: hexToRgba("#333333", 0.75),
+      
       icon: "#f8f8f8",
       "active": "rgba(221,221,221,0.5)",
       "black": "#000000",

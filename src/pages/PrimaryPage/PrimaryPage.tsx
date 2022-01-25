@@ -3,11 +3,7 @@ import React from 'react';
 
 import {
     Box,
-    Card,
-    CardBody,
-    CardHeader,
     Carousel,
-    Heading
 } from 'grommet';
 import { PageLayout } from '../../components/PageLayout';
 
@@ -41,30 +37,18 @@ export const PrimaryPage = () => (
             </Carousel>
         </Box>
         <Box direction='row' gap="medium" pad={'large'}>
-            <Card pad="medium" background="dark-1" gap="medium">
-                <CardHeader>
-                    <Heading color={'brand'} level={3}>
-                        Experiencia
-                    </Heading>
-                </CardHeader>
-                <CardBody>Ingenieros de sonido con más de 10 años de experiencia en el medio</CardBody>
-            </Card>
-            <Card pad="medium" background="dark-1" gap="large">
-                <CardHeader>
-                    <Heading color={'brand'} level={3}>
-                        Variedad
-                    </Heading>
-                </CardHeader>
-                <CardBody>Un equipo que cuenta con músicos compositores e intérpretes de diferentes intrumentos, nacionalidades y diversos estilos</CardBody>
-            </Card>
-            <Card pad="medium" background="dark-1" gap="large">
-                <CardHeader>
-                    <Heading color={'brand'} level={3}>
-                        Calidad
-                    </Heading>
-                </CardHeader>
-                <CardBody >Trabajamos en conjunto manteniendo un proceso de control de calidad de todos los proyectos que realizamos</CardBody>
-            </Card>
+            <AppCard 
+                headerText="Experiencia" 
+                bodyText='Ingenieros de sonido con más de 10 años de experiencia en el medio'
+            />        
+            <AppCard 
+                headerText="Variedad" 
+                bodyText='Un equipo que cuenta con músicos compositores e intérpretes de diferentes intrumentos, nacionalidades y diversos estilos'
+            />        
+            <AppCard 
+                headerText="Calidad" 
+                bodyText='Trabajamos en conjunto manteniendo un proceso de control de calidad de todos los proyectos que realizamos'
+            />        
         </Box>
     </PageLayout>
 );

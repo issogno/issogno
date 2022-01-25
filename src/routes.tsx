@@ -22,7 +22,7 @@ const routes = (
   <Grommet theme={theme} full>
     <DebugRouter>
         <Routes>
-            <Route path={'/'} element={<PrimaryPage/>} />
+            <Route path={''} element={<PrimaryPage/>} />
             <Route path={'/services'} element={<Services/>} />
             <Route path={'/history'} element={<History/>} />
             <Route path={'/contact'} element={<Contact/>} />
