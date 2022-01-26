@@ -21,11 +21,11 @@ export const AppHeader = (props: BoxExtendedProps) => {
 
             <Nav direction="row">
                 <Box direction='row' align="center" wrap>
-                    <AnchorWithPadding label="Inicio" href="/" />
-                    <AnchorWithPadding label="Servicios" href="/Services" />
-                    <AnchorWithPadding label="Historia" href="/history" />
-                    <AnchorWithPadding label="Miembros" href="/members" />
-                    <AnchorWithPadding label="Contacto" href="/contact" />
+                    <AnchorWithPadding label="Inicio" href="" />
+                    <AnchorWithPadding label="Servicios" href="#/services" />
+                    <AnchorWithPadding label="Historia" href="#/history" />
+                    <AnchorWithPadding label="Miembros" href="#/members" />
+                    <AnchorWithPadding label="Contacto" href="#/contact" />
                 </Box>
             </Nav>
             <Box direction='row' wrap>
