@@ -4,14 +4,14 @@ import {
 } from 'grommet';
 import { PageLayout } from '../components/PageLayout';
 
-import image01 from '../pages/PrimaryPage/image01.png';
-import image02 from '../pages/PrimaryPage/image02.png';
+import image01 from '../pages/Home/image01.png';
+import image02 from '../pages/Home/image02.png';
 import { Hero } from '../components/Hero';
 import { AppCard } from '../components/AppCard';
 
 export const Services = () => (
     <PageLayout>
-                <Box pad="large" gap="large" overflow="hidden">
+        <Box pad="large" gap="large" overflow="hidden">
             <Carousel play={5000} height={"medium"}>
                 <Hero image={image01} >
                     <AppCard 

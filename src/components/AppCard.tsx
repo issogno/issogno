@@ -1,13 +1,14 @@
 import { Card, CardHeader, Heading,CardBody } from "grommet";
+import { ReactElement } from "react";
 
-export const AppCard = ({ headerText, bodyText }: { headerText: string, bodyText: string}) => (
+export const AppCard = ({ headerText, bodyText }: { headerText: string, bodyText: string | ReactElement }) => (
 <Card pad="medium" background="issognoCard" gap="xxsmall">
     <CardHeader>
-        <Heading color={'brand'} level={3}>
+        <Heading margin="none" color={'brand'} level={3} >
             {headerText}
         </Heading>
     </CardHeader>
-    <CardBody>
+    <CardBody margin="none" >
         {bodyText}
     </CardBody>
 </Card>);

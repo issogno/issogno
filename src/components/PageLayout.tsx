@@ -1,3 +1,4 @@
+import { Box } from 'grommet';
 import { PropsWithChildren } from 'react'
 import { AppFooter } from './AppFooter';
 import { AppHeader } from './AppHeader';
@@ -10,11 +11,13 @@ export interface PageLayoutProps {
     Footer: (props: any) => JSX.Element;
 }
 
-export const PageLayout = ({children}: PropsWithChildren<any>): JSX.Element => (
+export const PageLayout = ({children, ...others}: PropsWithChildren<any>): JSX.Element => (
     <StyledPageLayout>
         <AppHeader />
         <div className="page-main">
+            <Box {...others}>
             {children}
+            </Box>
         </div>
         <AppFooter />
     </StyledPageLayout>);

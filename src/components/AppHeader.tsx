@@ -1,5 +1,5 @@
-import { Anchor, Avatar, Box, BoxExtendedProps, Header, Nav, Text } from "grommet";
-import { Facebook, Instagram, Linkedin } from 'grommet-icons';
+import { Anchor, Avatar, Box, BoxExtendedProps, Header, Nav, Text, Tip } from "grommet";
+import { Facebook, Instagram, Linkedin, Send } from 'grommet-icons';
 import styled from 'styled-components';
 import { IssognoLogoSvg } from "../img/IssognoLogoSvg";
 
@@ -30,13 +30,24 @@ export const AppHeader = (props: BoxExtendedProps) => {
             </Nav>
             <Box direction='row' wrap>
                     <AnchorWithPadding href="https://www.facebook.com/issogno" target="_blank">
-                        <Facebook color={'brand'} />
+                        <Tip content={<Text color="brand">Facebook</Text>}>
+                            <Facebook color={'brand'} />
+                        </Tip>
                     </AnchorWithPadding>
                     <AnchorWithPadding href="https://www.instagram.com/issognomusic" target="_blank">
-                        <Instagram color={'brand'} />
+                        <Tip content={<Text color="brand">Instagram</Text>}>
+                            <Instagram color={'brand'} />
+                        </Tip>                        
                     </AnchorWithPadding>
                     <AnchorWithPadding href="https://www.linkedin.com/in/issogno-music" target="_blank">
-                        <Linkedin color={'brand'} />
+                        <Tip content={<Text color="brand">Linkedin</Text>}>
+                            <Linkedin color={'brand'} />
+                        </Tip>                                                
+                    </AnchorWithPadding>
+                    <AnchorWithPadding href="https://t.me/+rc534zmZDBQwZjUx" target="_blank">
+                        <Tip content={<Text color="brand">Telegram</Text>}>
+                            <Send color={'brand'} />
+                        </Tip>
                     </AnchorWithPadding>
                 </Box>
         </Header>

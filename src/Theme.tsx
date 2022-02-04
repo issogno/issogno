@@ -32,7 +32,7 @@ export const theme: ThemeType = {
     font: {
       family: 'Roboto',
       size: '18px',
-      height: '20px',
+      height: '16px',
     },
     "colors": {
       issognoHeader: IssognoPalette.pureBlack,

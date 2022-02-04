@@ -1,23 +1,25 @@
-import { Box } from 'grommet';
-import image01 from '../pages/PrimaryPage/image01.png';
+import { Box, Paragraph } from 'grommet';
+import image01 from '../pages/Home/image01.png';
 import { PageLayout } from '../components/PageLayout';
-import { Hero } from '../components/Hero';
 import { AppCard } from '../components/AppCard';
+import { ImageTextCard } from '../components/ImageTextCard';
 
 
-const lorem = `
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor aliquam nulla facilisi cras fermentum odio. Urna condimentum mattis pellentesque id nibh. Gravida rutrum quisque non tellus orci. In fermentum posuere urna nec tincidunt praesent semper feugiat. Nulla aliquet enim tortor at auctor urna nunc id. Adipiscing bibendum est ultricies integer. Elit pellentesque habitant morbi tristique senectus et netus. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Dictum non consectetur a erat.
-Quam pellentesque nec nam aliquam sem. Dictum varius duis at consectetur lorem. Dapibus ultrices in iaculis nunc sed augue lacus viverra. Vulputate enim nulla aliquet porttitor lacus luctus. Mattis molestie a iaculis at erat pellentesque. Tortor at risus viverra adipiscing at in tellus. In vitae turpis massa sed elementum tempus egestas. Risus feugiat in ante metus dictum at tempor commodo ullamcorper. At lectus urna duis convallis convallis. Et magnis dis parturient montes. Et netus et malesuada fames.`;
+const content = <>
+ <Paragraph>Nuestro equipo comenzó con profesionales individuales: ingenieros de sonido y de mezcla, músicos, arreglistas y compositores de diferentes nacionalidades, y a raíz de la situación ocasionada por la Covid-19 y los cambios que trajo consigo, nos encontramos por primera vez en un sitio de discusión online en el cual se debatían temas relacionados con la música, se compartían experiencias y nos ayudábamos unos a los otros.</Paragraph>
+ <Paragraph>Poco a poco este grupo fue creciendo y al conocer las capacidades y la calidad del trabajo de cada uno nos fuimos involucrando en diferentes proyectos de forma conjunta. </Paragraph>
+ <Paragraph>Al ir adquiriendo experiencia trabajando en equipo surgió la idea de crear esta empresa para facilitar la atención a los clientes y para organizar mejor el acceso a nuestros servicios, y explotar mejor nuestro potencial de forma tal que no sea necesario ir a un estudio para poder materializar una idea, lo que resulta más económico y eficaz. Esto ha traído consigo que nuestros trabajos ya se puedan encontrar en varios países del mundo.;</Paragraph>
+</>;
 
 export const History = () => (
     <PageLayout>
         <Box pad="large">
-            <Hero image={image01} >
+            <ImageTextCard image={image01} >
                 <AppCard
-                    headerText="Sitio Web en Construcción 1"
-                    bodyText={lorem}
+                    headerText="Historia"
+                    bodyText={content}
                 />
-            </Hero>
+            </ImageTextCard>
         </Box>
     </PageLayout>
 );

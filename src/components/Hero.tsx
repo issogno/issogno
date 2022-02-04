@@ -1,8 +1,8 @@
 import { PropsWithChildren } from 'react'
-import { Box, Image } from 'grommet';
+import { Box } from 'grommet';
 
 export interface HeroProps extends PropsWithChildren<any> {
-    image: string | JSX.Element;
+    image: string;
 }
 
 /**
@@ -10,22 +10,14 @@ export interface HeroProps extends PropsWithChildren<any> {
  * @param props
  */
 export const Hero = ({image, children} : HeroProps) => {
-    let imageMarkup;
-    if (image) {
-      if (typeof image === 'string') {
-        imageMarkup = (<Image fill="horizontal" fit="cover" src={(image as string)} />);
-      } else {
-        imageMarkup = image;
-      }
-    }
+
     return (
-        <Box justify='end' align='center' direction='row'>
-        <Box basis='1/2' justify='center' align='center'>
-          {imageMarkup}
-        </Box>
+      <Box justify='end' align='center' direction='row' background={{color:"black", image: `url(${image})`}}>
+        <Box basis='1/2' justify='center' align='center' >
         <Box basis='1/2' pad={{horizontal: 'large', vertical: 'large'}}>
           {children}
         </Box>
-      </Box>
+         </Box>
+     </Box>
     );
 }
