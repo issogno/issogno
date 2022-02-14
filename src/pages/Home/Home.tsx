@@ -1,71 +1,53 @@
-
-import React from 'react';
-
+/**
+ * Copyright (C) 2022 Issogno Music
+ */
+import { Trans, useTranslation } from 'react-i18next';
 import {
-    Box, Paragraph
+  Box, Paragraph
 } from 'grommet';
 import { PageLayout } from '../../components/PageLayout';
-
-// import image01 from './image01.png';
-import logo from './../../img/logo_shift_left.jpg';
 import { Hero } from '../../components/Hero';
 import { AppCard } from '../../components/AppCard';
+import { Link } from 'react-router-dom';
 
-const mainTitle = '¿Quiénes somos?'
+import logo from './../../img/logo_shift_left_xlarge.png';
+
 // eslint-disable-next-line no-multi-str
-const mainText = () => 
-<Paragraph textAlign='justify'>
-Somos una empresa online de audio-producción compuesta por profesionales:
-Compositores, Músicos, Arreglistas e Ingenieros de sonido de diferentes nacionalidades,
-dedicados a ejercer cada una de estas disciplinas para llevar el producto final al siguiente nivel.
-Composiciones a la medida de las necesidades del cliente, Arreglos musicales que satisfagan sus exigencias,
-así como grabación, edición, postproducción, mezcla y masterización.
-</Paragraph>;
+function TranslatedParagraph({textKey, fill = true}: {textKey: string, fill: boolean}) {
+  const { t } = useTranslation();
 
- const tendenciesCard = () => 
-<Paragraph textAlign='justify'>
-No existe nada más negativo para la industria musical que estar fuera de las tendencias, 
-dale diversidad y un plus a tu obra artística sin cambiar tu estilo, personalidad o esencia, 
-solo necesitas gente que te entienda y que haga destacar tus ideas. Para ello está Issogno Music,
-te entendemos perfecto y sabemos qué sugerirte, tú solo brilla como el artista que eres.
-</Paragraph>;
-
-const diverisityCard = () =>
-<Paragraph textAlign='justify'>
-Tal cual existen colores, existe la diversidad en las necesidades de tu música, 
-¿quieres distinguirte del resto? Haz llegado al lugar en donde lo versátil y actual se toman de la mano,
-un equipo de diferentes culturas, regiones diversas, costumbres y lenguajes que a su vez, 
-hablan y se conjugan en el lenguaje universal de la música, éste es tu sitio y tu lugar, es tu momento.
-</Paragraph>;
+  return <Paragraph fill={fill} textAlign='justify'>
+    {t(textKey as never)}
+  </Paragraph>
+}
 
 const contactCard = () => 
-<Paragraph textAlign='justify'>
-Puede contactar con nosotros desde cualquier parte del mundo y será atendido de forma profesional y seria, justo como el artista se merece.
-</Paragraph>;
+  <Paragraph fill textAlign='justify'>
+    <Trans i18nKey="home-contact-text">
+      Puede <Link to="/contact">contactar con nosotros</Link> desde
+    </Trans>
+  </Paragraph>;
 
-export const Home = () => (
-    <PageLayout>
-        <Box pad="medium" gap="medium" overflow="hidden" >
-            <Hero image={logo} >
-                <AppCard 
-                    headerText={mainTitle}
-                    bodyText={mainText()}
-                />
-            </Hero>
-        </Box>
-        <Box direction='row' alignSelf='center' gap="medium" pad='medium'>
-            <AppCard
-                headerText="Variedad" 
-                bodyText={diverisityCard()}
-            />        
-            <AppCard 
-                headerText="Tendencias" 
-                bodyText={tendenciesCard()}
-            />        
-            <AppCard 
-                headerText="Contacto" 
-                bodyText={contactCard()}
-            />        
-        </Box>
-    </PageLayout>
-);
+export const Home = () => {
+  const { t } = useTranslation();
+  return <PageLayout>
+    <Box pad="medium" gap="medium" overflow="hidden" >
+      <Hero image={logo} >
+        <AppCard headerText={t('home-main-title')}>
+          {<TranslatedParagraph textKey='home-main-text' fill={false} />}
+        </AppCard>
+      </Hero>
+    </Box>
+    <Box direction='row' alignSelf='center' gap="medium" pad='medium'>
+      <AppCard headerText={t('home-diverisity-title')}>
+        {<TranslatedParagraph textKey='home-diverisity-text' fill={true} />}
+      </AppCard>
+      <AppCard headerText={t('home-tendencies-title')}>
+        {<TranslatedParagraph textKey='home-tendencies-text' fill={true} />}
+      </AppCard>
+      <AppCard headerText={t('home-contact-title')}>
+        {contactCard()}
+      </AppCard>
+    </Box>
+  </PageLayout>
+};

@@ -1,4 +1,6 @@
-import React from 'react';
+/**
+ * Copyright (C) 2022 Issogno Music
+ */
 
 import { Grommet } from 'grommet';
 import { AppHeader } from './components/AppHeader'
@@ -10,7 +12,7 @@ function App() {
     <Grommet theme={theme} full>
       <AppHeader>
       </AppHeader>
-      <IssognoLogoSvg size={{ height:"800px", width:"800px" }}/>
+      <IssognoLogoSvg size={{ height:'800px', width:'800px' }}/>
     </Grommet>
   );
 }

@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import routes from './routes';
 
+import './translations/i18n';
+
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />

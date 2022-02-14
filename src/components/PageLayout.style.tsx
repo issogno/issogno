@@ -1,4 +1,8 @@
-import styled from "styled-components";
+/**
+ * Copyright (C) 2022 Issogno Music
+ */
+
+import styled from 'styled-components';
 import background from '../img/background.jpg';
 
 export const StyledPageLayout = styled.div`

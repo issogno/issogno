@@ -1,0 +1,37 @@
+{
+    "TITLE": "React i18next",
+    
+    "home-main-title": "¿Quiénes somos?",
+    "home-main-text": "Somos una empresa online de audio-producción compuesta por profesionales: \rCompositores, Músicos, Arreglistas e Ingenieros de sonido de diferentes nacionalidades,\r dedicados a ejercer cada una de estas disciplinas para llevar el producto final al siguiente nivel.\r Composiciones a la medida de las necesidades del cliente, Arreglos musicales que satisfagan sus exigencias,\r así como grabación, edición, postproducción, mezcla y masterización.",
+    "home-diverisity-title": "Variedad",
+    "home-diverisity-text": "No existe nada más negativo para la industria musical que estar fuera de las tendencias, \rdale diversidad y un plus a tu obra artística sin cambiar tu estilo, personalidad o esencia, \r solo necesitas gente que te entienda y que haga destacar tus ideas. Para ello está Issogno Music,\r te entendemos perfecto y sabemos qué sugerirte, tú solo brilla como el artista que eres.",
+    "home-tendencies-title": "Tendencias",
+    "home-tendencies-text": "No existe nada más negativo para la industria musical que estar fuera de las tendencias, \rdale diversidad y un plus a tu obra artística sin cambiar tu estilo, personalidad o esencia, \rsolo necesitas gente que te entienda y que haga destacar tus ideas. Para ello está Issogno Music, \rte entendemos perfecto y sabemos qué sugerirte, tú solo brilla como el artista que eres.",
+    "home-contact-title": "Contacto",
+    "home-contact-text": "Puede <1>contactar con nosotros</1> desde cualquier parte del mundo y será atendido de forma profesional y seria, justo como el artista se merece.",
+
+    "history-header": "Historia",
+    "history-1": "Nuestro equipo comenzó con profesionales individuales: ingenieros de sonido y de mezcla, músicos, arreglistas y compositores de diferentes nacionalidades, y a raíz de la situación ocasionada por la Covid-19 y los cambios que trajo consigo, nos encontramos por primera vez en un sitio de discusión online en el cual se debatían temas relacionados con la música, se compartían experiencias y nos ayudábamos unos a los otros",
+    "history-2": "Poco a poco este grupo fue creciendo y al conocer las capacidades y la calidad del trabajo de cada uno nos fuimos involucrando en diferentes proyectos de forma conjunta.",
+    "history-3": "Al ir adquiriendo experiencia trabajando en equipo surgió la idea de crear esta empresa para facilitar la atención a los clientes y para organizar mejor el acceso a nuestros servicios, y explotar mejor nuestro potencial de forma tal que no sea necesario ir a un estudio para poder materializar una idea, lo que resulta más económico y eficaz. Esto ha traído consigo que nuestros trabajos ya se puedan encontrar en varios países del mundo.",
+
+    "services-1-note": "Dentro de nuestro catálogo de servicios encontrarás un listado creciente, de los cuales puedes solicitar la información que requieras para aclarar cualquier duda.",
+    "services-1-title": "Producción musical",
+    "services-1-text": "Nuestro equipo de trabajo cuenta con una amplia experiencia y muchos de ellos con una larga trayectoria que nos permite poder hacer producciones musicales vanguardistas, que sean competitivas, pero que sobre todo, sean o que nuestros clientes desean con exactitud, para ello es importante mantener el contacto y el intercambio de ideas entre las partes participantes, esto solamente puede tener buenos resultados siempre que se establezcan las limitantes propias que correspondan a cada profesional, estamos seguros que la confianza juega un papel importante, es así que al permitirnos producir su música, se garantiza cumplir con las expectativas e incluso, superarlas.",
+    "services-2-title": "Grabación",
+    "services-2-text": "Contamos con la captura de instrumentos totalmente en vivo, grabaciones hechas en alta resolución para conservar el sonido original en su más puro estado. La gran mayoría no toma en cuenta que el audio se degrada si no se sabe como manipularlo y más aún, si no se sabe cómo almacenarlo, toma en cuenta que una de nuestras mayores preocupaciones a la hora de grabar, es mantener el audio tan intacto como sea posible, libre de procesos innecesarios que pudieran degradar la señal original, de este modo garantizamos que lo que recibas, sea audio de la más alta calidad posible.",
+    "services-3-title": "Mezcla",
+    "services-3-text": "Muchos de nuestros ingenieros tienen experiencia en la producción de shows en vivo, hemos combinado esa experiencia con el trabajo en estudio y como resultado obtenemos mezclas únicas que son un diferenciador con muchas más en el mercado musical, además estamos en constante contacto bajo las revisiones de monitoreo, esto para que la expectativa sea ampliamente alcanza y/o superada.",
+    "services-4-title": "Masterización",
+    "services-4-text": "La cereza en el pastel, las últimas pinceladas, justamente en este momento es que el trabajo arduo en el balance del material grabado se concreta con nuestro proceso único, llevado a una alta resolución con la misma meta de conservar la mayor integridad posible del audio. Los resultados son sorprendentes, el trabajo en equipo siempre es mejor.",
+    "services-5-title": "Edición",
+    "services-5-text": "En la actualidad, las limitantes de tiempo son uno de los factores principales por el cual la edición profesional de audio es de suma importancia, sin ella, cumplir con los plazos sería muy difícil, es así que con el equipo de edición profesional que Issogno posee, garantizamos el flujo y desarrollo de cualquier proyecto, nada puede detener que esa producción llegue en tiempo y forma.",
+    "services-6-title": "Transposición",
+    "services-6-text": "Es un servicio extra que el equipo de profesionales de Issogno ofrece dado que en infinidad de veces y por diversas razones, el arreglo musical y lo que se ha grabado necesita ser modificado en su tonalidad, esto implicaría tener que grabar todo desde cero, nosotros tenemos la solución a esta dificultad, contáctanos para detalles sobre el proceso, tendrás un alivio al saber que no necesariamente debes regrabar todo tu proyecto",
+    "services-7-title": "Restauración",
+    "services-7-text": "Muchas veces las condiciones en las que el audio se recibe para la mezcla y/o postproducción, no son los adecuados, entonces se presenta la necesidad de tratar el audio de una manera que nos permita obtener la mejor versión de si mismo, nuestro equipo de restauración cuenta con la experiencia y el quipo adecuado para hacer que el audio suene impecable, contacta con nosotros y podemos valorar el material según sea el caso y darte los por menores a seguir para aprovechar ese material valioso que difícilmente se podría volver a capturar.",
+    "services-8-title": "Composición",
+    "services-8-text": "Tenemos el entrenamiento y al personal indicado para crear obrar completas desde cero, compositores con años de experiencia en diversos géneros, lo que necesitas seguro lo tenemos en el equipo Issogno.",
+    "services-9-title": "Arreglos",
+    "services-9-text": "Músicos con más de 25 años de trayectoria que derivan en arreglos musicales competitivos, desde lo clásico hasta lo moderno y actual o inclusive, fusionando esos mundos y todo para satisfacer las necesidades del cliente y el consumidor final."
+}

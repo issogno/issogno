@@ -1,14 +1,22 @@
-import { Card, CardHeader, Heading,CardBody } from "grommet";
-import { ReactElement } from "react";
+/**
+ * Copyright (C) 2022 Issogno Music
+ */
+import { Card, CardHeader, Heading,CardBody, BoxExtendedProps } from 'grommet';
+import { PropsWithChildren } from 'react';
 
-export const AppCard = ({ headerText, bodyText }: { headerText: string, bodyText: string | ReactElement }) => (
-<Card pad="medium" background="issognoCard" gap="xxsmall">
+export interface AppCardProps extends BoxExtendedProps, PropsWithChildren<unknown> {
+    headerText?: string;
+    bodyText?: string;
+}
+
+export const AppCard = ({ headerText, bodyText, children, ...others }: AppCardProps) => (
+  <Card pad="medium" background="issognoCard" gap="xxsmall" {...others}>
     <CardHeader>
-        <Heading margin="none" color={'brand'} level={3} >
-            {headerText}
-        </Heading>
+      <Heading margin="none" color={'brand'} level={3} >
+        {headerText}
+      </Heading>
     </CardHeader>
     <CardBody margin="none" >
-        {bodyText}
+      {bodyText || children}
     </CardBody>
-</Card>);
+  </Card>);
